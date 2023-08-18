@@ -3,10 +3,24 @@
   --texto1: #727272;
 }
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 #wrapper {
   max-width: 100%;
-  height: 100vh;
-  background: 180deg, rgb(255, 255, 255) 0%, rgb(206, 212, 224) 100%;
+  /* height: 100vh; */
 }
 
 section {
@@ -27,7 +41,7 @@ section {
   padding: 10px;
   background: red;
   border-radius: 50%;
-  position:fixed;
+  position: fixed;
 }
 
 /* HEADER */
@@ -119,17 +133,20 @@ a {
   justify-content: space-evenly;
   align-content: flex-end;
 }
-.proyectos__item{
+
+.proyectos__item {
   border-radius: 10px;
   background-color: red;
   position: relative;
 }
-.proyectos__text{
+
+.proyectos__text {
   position: absolute;
   width: 100%;
   margin: 0;
   padding: 2px;
 }
+
 .proyectos__item:nth-child(1) {
   grid-column-start: 1;
 }
@@ -152,4 +169,137 @@ a {
 
 .proyectos__item:nth-child(6) {
   grid-column-start: 3;
+}
+
+/* FORMULARIO DE COTIZACION */
+fieldset {
+  border: solid 2px #Ffff;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form__fieldset {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.form__head {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form__item {
+  border: solid 2px #000;
+  /* ; */
+  border-radius: 7px;
+  /* padding: 1px; */
+}
+
+.form__inputs {
+  width: 80%;
+  height: 300px;
+  display: grid;
+  grid-template-areas: "Nombre Apellido"
+    "Email Telefono"
+    "Proyecto Presupuesto"
+    "TextArea TextArea";
+  gap: 30px;
+}
+
+.form__item:nth-child(1) {
+  grid-area: Nombre;
+}
+
+.form__item:nth-child(2) {
+  grid-area: Apellido;
+}
+
+.form__item:nth-child(3) {
+  grid-area: Email;
+}
+
+.form__item:nth-child(4) {
+  grid-area: Telefono;
+}
+
+.form__item:nth-child(5) {
+  grid-area: Proyecto;
+}
+
+.form__item:nth-child(6) {
+  grid-area: Presupuesto;
+}
+
+.form__item:nth-child(7) {
+  grid-area: TextArea;
+}
+
+@media (max-width: 760px) {
+  .form__inputs {
+    width: 100%;
+    grid-template-areas: "Nombre"
+      "Apellido"
+      "Email"
+      "Telefono"
+      "Proyecto"
+      "Presupuesto"
+      "TextArea";
+  }
+
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(180deg, rgba(254, 0, 0, 1) 0%, rgba(255, 107, 23, 1) 100%);
+}
+
+.footer__enlaces {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__item:nth-child(1) {}
+
+.footer__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+.footer__bottom--1 {
+  display: grid;
+  grid-template-areas: "TOTAL TOTAL TOTAL"
+    "Avisos Privacidad Cookies";
+}
+.bottom1__item:nth-child(1){
+  grid-area: TOTAL;
+}
+.bottom1__item:nth-child(2){
+  grid-area: Avisos;
+}
+.bottom1__item:nth-child(3){
+  grid-area: Privacidad;
+}
+.bottom1__item:nth-child(4){
+  grid-area: Cookies;
+}
+
+.footer__bottom--2 {
+  
+}
+.bottom__enlaces--1{
+  
+}
+.bottom__enlaces--2{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
