@@ -42,6 +42,7 @@ section {
   background: red;
   border-radius: 50%;
   position: fixed;
+  z-index: 10;
 }
 
 /* HEADER */
@@ -107,6 +108,16 @@ a {
 }
 
 /* NUESTROS CLIENTES */
+.CarruselClientes {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.clientesItem {
+  max-width: 10%;
+}
+
 .titulo1,
 .titulo1__texto {
 
@@ -135,9 +146,18 @@ a {
 }
 
 .proyectos__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 10px;
-  background-color: red;
+  background: #fff;
   position: relative;
+}
+
+.proyectos__item:hover {
+  background-image: linear-gradient(180deg, rgba(254,0,0,1) 0%, rgba(255,106,24,1) 100%);
+  cursor: pointer;
 }
 
 .proyectos__text {
@@ -274,31 +294,34 @@ footer {
   grid-template-columns: repeat(2, 1fr);
 
 }
+
 .footer__bottom--1 {
   display: grid;
   grid-template-areas: "TOTAL TOTAL TOTAL"
     "Avisos Privacidad Cookies";
 }
-.bottom1__item:nth-child(1){
+
+.bottom1__item:nth-child(1) {
   grid-area: TOTAL;
 }
-.bottom1__item:nth-child(2){
+
+.bottom1__item:nth-child(2) {
   grid-area: Avisos;
 }
-.bottom1__item:nth-child(3){
+
+.bottom1__item:nth-child(3) {
   grid-area: Privacidad;
 }
-.bottom1__item:nth-child(4){
+
+.bottom1__item:nth-child(4) {
   grid-area: Cookies;
 }
 
-.footer__bottom--2 {
-  
-}
-.bottom__enlaces--1{
-  
-}
-.bottom__enlaces--2{
+.footer__bottom--2 {}
+
+.bottom__enlaces--1 {}
+
+.bottom__enlaces--2 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
