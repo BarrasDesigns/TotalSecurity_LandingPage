@@ -1,6 +1,9 @@
 /* GLOBALES */
 :root {
   --texto1: #727272;
+
+  --white: #FFF;
+  --black: #000;
 }
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -27,10 +30,12 @@ section {
   width: 100%;
   height: 100vh;
 }
-li{
+
+li {
   list-style-type: none;
 }
-a{
+
+a {
   text-decoration: none;
 }
 
@@ -291,18 +296,44 @@ input:checked+.slide-container .nav label {
 }
 
 .proyectos__item {
-  width: 100%;
+  width: 80%;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   border-radius: 10px;
   background: #fff;
   position: relative;
+  -webkit-box-shadow: 4px 6px 15px -3px rgba(0, 0, 0, 0.74);
+  -moz-box-shadow: 4px 6px 15px -3px rgba(0, 0, 0, 0.74);
+  box-shadow: 4px 6px 15px -3px rgba(0, 0, 0, 0.74);
+  
+}
+.proyectos__icon {
+  width: 20%;
+
+}
+
+.proyectos__item>hr {
+  width: 30%;
+  border: 2px solid red;
+  
 }
 
 .proyectos__item:hover {
   background-image: linear-gradient(180deg, rgba(254, 0, 0, 1) 0%, rgba(255, 106, 24, 1) 100%);
   cursor: pointer;
+  color: var(--white);
+  
+}
+.proyectos__item:hover > .proyectos__icon {
+  filter:invert(100%);
+  
+}
+.proyectos__item:hover > hr {
+  border: 2px solid white;
+
 }
 
 .proyectos__text {
