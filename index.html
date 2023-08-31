@@ -56,13 +56,14 @@
             <div>
                 <div class="carousel">
                     <ul class="slides">
+                        <!-- CARRUSEL 1 -->
                         <input type="radio" name="radio-buttons" id="img-1" checked />
                         <li class="slide-container">
                             <div class="slide-image">
-                                <img src="./img/consultoria.svg">
+                                <img src="./img/carrusel/1.jpg">
                             </div>
                             <div class="carousel-controls">
-                                <label for="img-3" class="prev-slide">
+                                <label for="img-5" class="prev-slide">
                                     <span>&lsaquo;</span>
                                 </label>
                                 <label for="img-2" class="next-slide">
@@ -70,10 +71,11 @@
                                 </label>
                             </div>
                         </li>
+                        <!-- CARRUSEL 2 -->
                         <input type="radio" name="radio-buttons" id="img-2" />
                         <li class="slide-container">
                             <div class="slide-image">
-                                <img src="./img/correo.svg">
+                                <img src="./img/carrusel/2.jpg">
                             </div>
                             <div class="carousel-controls">
                                 <label for="img-1" class="prev-slide">
@@ -84,13 +86,44 @@
                                 </label>
                             </div>
                         </li>
+                        <!-- CARRUSEL 3 -->
                         <input type="radio" name="radio-buttons" id="img-3" />
                         <li class="slide-container">
                             <div class="slide-image">
-                                <img src="./img/cv.svg">
+                                <img src="./img/carrusel/3.jpg">
                             </div>
                             <div class="carousel-controls">
                                 <label for="img-2" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-4" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- CARRUSEL 4 -->
+                        <input type="radio" name="radio-buttons" id="img-4" />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="./img/carrusel/4.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-3" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-5" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- CARRUSEL 5 -->
+                        <input type="radio" name="radio-buttons" id="img-5" />
+                        <li class="slide-container">
+                            <div class="slide-image">
+                                <img src="./img/carrusel/5.png">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-4" class="prev-slide">
                                     <span>&lsaquo;</span>
                                 </label>
                                 <label for="img-1" class="next-slide">
@@ -100,8 +133,14 @@
                         </li>
                         <div class="carousel-dots">
                             <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+
                             <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+
                             <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+
+                            <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+
+                            <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
                         </div>
                     </ul>
                 </div>
@@ -112,7 +151,7 @@
 
             <!-- </section> -->
             <!-- NUESTROS CLIENTES -->
-            <section>
+            <section class="contClientes">
                 <div class="CarruselClientes">
                     <img class="clientesItem" src="./img/señorlatino.png" alt="seniorlatino">
                     <img class="clientesItem" src="./img/Quality.png" alt="quality">
@@ -137,7 +176,7 @@
             </section>
 
             <!-- PROYECTOS -->
-            <section>
+            <section class="contProyectos">
                 <div class="title2">
                     <button class="btnContacto--proyectos" id="btnContacto--proyectos">Proyectos</button>
                 </div>
@@ -197,36 +236,42 @@
             </section>
 
             <!-- BLOG -->
-            <section>
-                <div class="blog">
-
-                </div>
+            <section class="contBlog">
+                
 
             </section>
-            <section>
-                <!-- Formulario Cotizacion -->
-                <div class="form">
-                    <!-- <h2>¡Cotiza Ahora!</h2> -->
-                    <fieldset class="form__fieldset">
-                        <legend class="form__head">
-                            <h2>¡Cotiza Ahora!</h2>
-                        </legend>
 
-                        <p>Llena el formulario a continuación compártenos los detalles de tus necesidades <br></p>
-                        <p>y nos pondremos en contacto contigo lo más pronto posible.</p>
+            <section class="contCotiza">
+                <div class="candado">
+                    <div class="contenido-candado">
 
-                        <form class="form__inputs" action="#">
-                            <!-- <label for="nombre">Nombre</label> -->
-                            <input class="form__item" type="text" placeholder="*Nombre">
-                            <input class="form__item" type="text" placeholder="*Apellido">
-                            <input class="form__item" type="string" placeholder="*Email">
-                            <input class="form__item" type="text" placeholder="*Teléfono">
-                            <input class="form__item" type="text" placeholder="*Tipo de proyecto">
-                            <input class="form__item" type="text" placeholder="*Presupuesto">
-                            <textarea class="form__item" name="" id="" cols="60" rows="10"
-                                placeholder="Describe cualquier restricción o desafío particular que debamos tener en cuenta al diseñar las soluciones de seguridad"></textarea>
-                        </form>
-                    </fieldset>
+
+                        <!-- Formulario Cotizacion -->
+                        <div class="form">
+                            <!-- <h2>¡Cotiza Ahora!</h2> -->
+                            <fieldset class="form__fieldset">
+                                <legend class="form__head">
+                                    <h2>¡Cotiza Ahora!</h2>
+                                </legend>
+
+                                <p>Llena el formulario a continuación compártenos los detalles de tus necesidades <br>
+                                </p>
+                                <p>y nos pondremos en contacto contigo lo más pronto posible.</p>
+
+                                <form class="form__inputs" action="#">
+                                    <!-- <label for="nombre">Nombre</label> -->
+                                    <input class="form__item" type="text" placeholder="*Nombre">
+                                    <input class="form__item" type="text" placeholder="*Apellido">
+                                    <input class="form__item" type="string" placeholder="*Email">
+                                    <input class="form__item" type="text" placeholder="*Teléfono">
+                                    <input class="form__item" type="text" placeholder="*Tipo de proyecto">
+                                    <input class="form__item" type="text" placeholder="*Presupuesto">
+                                    <textarea class="form__item" name="" id="" cols="60" rows="10"
+                                        placeholder="Describe cualquier restricción o desafío particular que debamos tener en cuenta al diseñar las soluciones de seguridad"></textarea>
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -341,7 +386,7 @@
                 <ul class="bottom__enlaces--2">
                     <li>
                         <a href="">
-                            <img  src="./img/facebook-01.svg" alt="facebook">
+                            <img src="./img/facebook-01.svg" alt="facebook">
                     </li>
                     <li>
                         <a href="">
