@@ -68,7 +68,7 @@ a {
 }
 
 .logo {
-  width: 200px;
+  width: 123px;
 }
 
 .nav__menu {
@@ -105,15 +105,20 @@ a {
 /* TERMINA MENU LINKS */
 
 
-.btnContacto,
-.btnContacto--proyectos {
+.btnContacto {
   margin-left: 80px;
   background: #fe0000;
   color: white;
   border-radius: 8px;
   padding: 4px;
 }
-
+.btnContacto--proyectos{
+  background: #fe0000;
+  color: white;
+  border-radius: 8px;
+  padding: 4px;
+  margin-top: 10px;
+}
 /* CARRUSEL */
 .carousel {
   /* margin-left: 15%;
@@ -283,10 +288,12 @@ input:checked+.slide-container .nav label {
 
 /* PROYECTOS */
 .contProyectos{
-
+  padding-top: 10px;
 }
 .title2 {
   text-align: center;
+  padding-bottom: 33px;
+
 }
 
 .proyectos {
@@ -432,13 +439,13 @@ fieldset {
 }
 
 .form__inputs {
-  width: 80%;
-  height: 300px;
+  height: 358px;
   display: grid;
-  grid-template-areas: "Nombre Apellido"
-    "Email Telefono"
-    "Proyecto Presupuesto"
-    "TextArea TextArea";
+  grid-template-areas:
+"Nombre   Apellido   " 
+"Email    Telefono   " 
+"Proyecto Presupuesto" 
+"TextArea TextArea   ";
   gap: 30px;
 }
 
