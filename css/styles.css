@@ -7,7 +7,6 @@
   --black: #000;
 }
 
-/* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
 }
@@ -16,6 +15,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+
 }
 
 body {
@@ -23,8 +23,9 @@ body {
 }
 
 #wrapper {
-  max-width: 100%;
-  /* height: 100vh; */
+  width: 95%;
+  margin-left: 2.5%;
+
 }
 
 /* section {
@@ -375,7 +376,8 @@ input:checked+.slide-container .nav label {
   ul.slides {
     height: 155px;
   }
-  .carousel-controls{
+
+  .carousel-controls {
     line-height: 155px;
     font-size: 70px;
   }
@@ -385,22 +387,26 @@ input:checked+.slide-container .nav label {
   ul.slides {
     height: 268px;
   }
-  .carousel-controls{
+
+  .carousel-controls {
     line-height: 300px;
   }
 
 }
+
 @media (min-width: 731px) and (max-width: 960px) {
   ul.slides {
     height: 400px;
   }
-  .carousel-controls{
+
+  .carousel-controls {
     line-height: 400px;
   }
 
 }
+
 @media (max-width: 960px) {
-  .carousel-dot{
+  .carousel-dot {
     display: none;
   }
 
@@ -468,11 +474,12 @@ input:checked+.slide-container .nav label {
 
 
 }
+
 @media (max-width: 960px) {
-  .clientesItem{
+  .clientesItem {
     max-width: 16%;
   }
-  
+
 }
 
 /* PROYECTOS */
@@ -574,44 +581,49 @@ input:checked+.slide-container .nav label {
 .proyectos__item:nth-child(6) {
   grid-column-start: 3;
 }
+
 @media (min-width: 248px) and (max-width: 468px) {
-  .proyectos{
+  .proyectos {
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
-  .proyectos__item{
+
+  .proyectos__item {
     grid-column-start: 1 !important;
   }
 }
+
 @media (min-width: 469px) and (max-width: 960px) {
-  .proyectos{
+  .proyectos {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
+
   .proyectos__item:nth-child(1) {
     grid-column-start: 1;
   }
-  
+
   .proyectos__item:nth-child(2) {
     grid-column-start: 2;
   }
-  
+
   .proyectos__item:nth-child(3) {
     grid-column-start: 1;
   }
-  
+
   .proyectos__item:nth-child(4) {
     grid-column-start: 2;
   }
-  
+
   .proyectos__item:nth-child(5) {
     grid-column-start: 1;
   }
-  
+
   .proyectos__item:nth-child(6) {
     grid-column-start: 2;
   }
 }
+
 /* TERMINA PROYECTOS  */
 /* FORMULARIO DE COTIZACION */
 .contCotiza {
@@ -626,6 +638,7 @@ input:checked+.slide-container .nav label {
   background-repeat: no-repeat;
   margin-bottom: 2rem;
   position: relative;
+ 
 }
 
 .contenido-candado {
@@ -642,7 +655,7 @@ input:checked+.slide-container .nav label {
 }
 
 fieldset {
-  border: solid 2px #Ffff;
+  border: transparent
 }
 
 .form {
@@ -709,15 +722,26 @@ fieldset {
   grid-area: TextArea;
 }
 
+@media (min-width: 264px) and (max-width:468px) {
+  .form__item {
+    width: 90%;
+  }
+}
+
 @media (max-width: 960px) {
-  .candado{
+  .candado {
     height: 1000px;
   }
-  .contenido-candado{
+
+  .contenido-candado {
     margin: 0px;
   }
-  .form{
-    margin-bottom:9%;
+
+  .form {
+    margin-bottom: 9%;
+  }
+  .form__item {
+    width: 90%;
   }
   .form__inputs {
     grid-template-areas: "Nombre"
@@ -727,11 +751,20 @@ fieldset {
       "Proyecto"
       "Presupuesto"
       "TextArea";
-      gap:80x;
+    gap: 80x;
+  }
+  .candado{
+
+    background-size: cover;
+    background-position: top;
+    
+  }
+  .fieldser > p{
+    text-align: center;
   }
 
-
 }
+
 /* TERMINA FORMULARIO  */
 /* FOOTER */
 a {
@@ -830,4 +863,18 @@ li>a>img {
   border-radius: 50%;
   border: 2px solid white;
   padding: 1px;
+}
+@media (max-width: 960px) {
+  .footer__bottom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .footer__bottom--1 {
+    display: grid;
+    grid-template-areas: "TOTAL TOTAL TOTAL"
+      "Avisos Privacidad Cookies";
+    position: relative;
+    margin: 12px 0px 0px 42px;
+  }
+  
 }
