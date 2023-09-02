@@ -283,7 +283,7 @@ ul.slides input {
   min-width: 100%;
   height: 100%; */
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .carousel-controls {
@@ -330,19 +330,20 @@ ul.slides input {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 108px;
   z-index: 999;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .carousel-dots .carousel-dot {
-  display: inline-block;
-  width: 13%;
-  height: 4px;
+  width: 19%;
+  height: 7px;
   border-radius: 3%;
-  background-color: #e6dddd;
+  background-color: #ee0606;
   opacity: 0.5;
-  margin: 8px;
+  margin: 1px;
 }
 
 
@@ -370,9 +371,42 @@ input:checked+.slide-container .nav label {
   display: block;
 }
 
+@media (min-width: 248px) and (max-width: 468px) {
+  ul.slides {
+    height: 155px;
+  }
+  .carousel-controls{
+    line-height: 155px;
+    font-size: 70px;
+  }
+}
 
+@media (min-width: 469px) and (max-width: 730px) {
+  ul.slides {
+    height: 268px;
+  }
+  .carousel-controls{
+    line-height: 300px;
+  }
 
+}
+@media (min-width: 731px) and (max-width: 960px) {
+  ul.slides {
+    height: 400px;
+  }
+  .carousel-controls{
+    line-height: 400px;
+  }
 
+}
+@media (max-width: 960px) {
+  .carousel-dot{
+    display: none;
+  }
+
+}
+
+/* TERMINA CARRUSEL */
 
 /* LOGOS */
 .logos {
@@ -433,6 +467,12 @@ input:checked+.slide-container .nav label {
   color: var(--texto1);
 
 
+}
+@media (max-width: 960px) {
+  .clientesItem{
+    max-width: 16%;
+  }
+  
 }
 
 /* PROYECTOS */
@@ -534,7 +574,45 @@ input:checked+.slide-container .nav label {
 .proyectos__item:nth-child(6) {
   grid-column-start: 3;
 }
-
+@media (min-width: 248px) and (max-width: 468px) {
+  .proyectos{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .proyectos__item{
+    grid-column-start: 1 !important;
+  }
+}
+@media (min-width: 469px) and (max-width: 960px) {
+  .proyectos{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .proyectos__item:nth-child(1) {
+    grid-column-start: 1;
+  }
+  
+  .proyectos__item:nth-child(2) {
+    grid-column-start: 2;
+  }
+  
+  .proyectos__item:nth-child(3) {
+    grid-column-start: 1;
+  }
+  
+  .proyectos__item:nth-child(4) {
+    grid-column-start: 2;
+  }
+  
+  .proyectos__item:nth-child(5) {
+    grid-column-start: 1;
+  }
+  
+  .proyectos__item:nth-child(6) {
+    grid-column-start: 2;
+  }
+}
+/* TERMINA PROYECTOS  */
 /* FORMULARIO DE COTIZACION */
 .contCotiza {
   width: 100%;
@@ -631,9 +709,17 @@ fieldset {
   grid-area: TextArea;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 960px) {
+  .candado{
+    height: 1000px;
+  }
+  .contenido-candado{
+    margin: 0px;
+  }
+  .form{
+    margin-bottom:9%;
+  }
   .form__inputs {
-    width: 100%;
     grid-template-areas: "Nombre"
       "Apellido"
       "Email"
@@ -641,10 +727,12 @@ fieldset {
       "Proyecto"
       "Presupuesto"
       "TextArea";
+      gap:80x;
   }
 
-}
 
+}
+/* TERMINA FORMULARIO  */
 /* FOOTER */
 a {
   color: var(--white);
