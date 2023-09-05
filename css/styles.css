@@ -638,7 +638,7 @@ input:checked+.slide-container .nav label {
   background-repeat: no-repeat;
   margin-bottom: 2rem;
   position: relative;
- 
+
 }
 
 .contenido-candado {
@@ -740,9 +740,11 @@ fieldset {
   .form {
     margin-bottom: 9%;
   }
+
   .form__item {
     width: 90%;
   }
+
   .form__inputs {
     grid-template-areas: "Nombre"
       "Apellido"
@@ -753,13 +755,15 @@ fieldset {
       "TextArea";
     gap: 80x;
   }
-  .candado{
+
+  .candado {
 
     background-size: cover;
     background-position: top;
-    
+
   }
-  .fieldser > p{
+
+  .fieldser>p {
     text-align: center;
   }
 
@@ -864,17 +868,69 @@ li>a>img {
   border: 2px solid white;
   padding: 1px;
 }
+
 @media (max-width: 960px) {
+  .logoFooter {
+    width: 30%;
+  }
+
+  footer {
+    height: 1500px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .footer__item {
+    text-align: center;
+  }
+
+  .footer__enlaces {
+    grid-template-columns: repeat(1, 1fr);
+    /* height: 100%; */
+  }
+
+  .footer__head {
+    width: 100%;
+  }
+
+  .footer__body {
+    margin: 0 auto;
+    position: static;
+  }
+
+  .footer__link {
+
+    position: relative;
+    padding-top: 17px;
+  }
+
+  .icon {
+    position: absolute;
+    margin: -12px 0px 0px -65px;
+
+  }
+
   .footer__bottom {
+    display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  
+
   .footer__bottom--1 {
-    display: grid;
-    grid-template-areas: "TOTAL TOTAL TOTAL"
-      "Avisos Privacidad Cookies";
-    position: relative;
+
+    grid-template-areas: "TOTAL "
+      "Avisos "
+      "Privacidad "
+      "Cookies";
     margin: 12px 0px 0px 42px;
   }
-  
+
+  .bottom__enlaces--2 {
+    justify-content: center;
+  }
+
+  .bottom__enlaces--2>li {
+    width: 52px;
+    margin: 19px 15px 0px 0px;
+  }
+
 }
