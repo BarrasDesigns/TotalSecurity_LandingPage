@@ -29,7 +29,7 @@
                 <ul>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#">Nosotros</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="https://totalsecurity.mx/Blog/">Blog</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#cursos">Cursos</a></li>
                     <li><a href="#cotizacion">Contacto</a></li>
@@ -43,7 +43,7 @@
             <ul class="nav__list">
                 <li class="menuLink text-style-underline"><a href="#servicios">Servicios</a></li>
                 <li class="menuLink text-style-underline"><a href="#">Nosotros</a></li>
-                <li class="menuLink text-style-underline"><a href="#blog">Blog</a></li>
+                <li class="menuLink text-style-underline"><a href="https://totalsecurity.mx/Blog/">Blog</a></li>
                 <li class="menuLink text-style-underline"><a href="#proyectos">Proyectos</a></li>
                 <li class="menuLink text-style-underline"><a href="#">Cursos</a></li>
                 <li>
@@ -286,16 +286,21 @@
                                 </p>
                                 <p>y nos pondremos en contacto contigo lo más pronto posible.</p>
 
-                                <form class="form__inputs" action="#">
-                                    <!-- <label for="nombre">Nombre</label> -->
-                                    <input class="form__item" type="text" placeholder="*Nombre">
-                                    <input class="form__item" type="text" placeholder="*Apellido">
-                                    <input class="form__item" type="string" placeholder="*Email">
-                                    <input class="form__item" type="text" placeholder="*Teléfono">
-                                    <input class="form__item" type="text" placeholder="*Tipo de proyecto">
-                                    <input class="form__item" type="text" placeholder="*Presupuesto">
-                                    <textarea class="form__item" name="" id="" cols="60" rows="10"
+                                <form class="form__inputs" action="#" id="formulario">
+                                    <!-- <label for="nombre"></label> -->
+                                    <input class="form__item" 
+                                    type="text" name="name" placeholder="*Nombre">
+                                    <input class="form__item" type="text" name="apellido" placeholder="*Apellido">
+                                    <input class="form__item" type="string" name="mail" placeholder="*Email">
+                                    <input class="form__item" type="string" name="phone" placeholder="*Teléfono">
+                                    <input class="form__item" type="text" name="proyecto" placeholder="*Tipo de proyecto">
+                                    <input class="form__item" name="presupuesto "type="string" placeholder="*Presupuesto">
+                                    <textarea name="message" class="form__item" name="" id="" cols="60" rows="10"
                                         placeholder="Describe cualquier restricción o desafío particular que debamos tener en cuenta al diseñar las soluciones de seguridad"></textarea>
+
+                                        <button 
+                                        class="btnContacto--form"
+                                        id="submit" type="submit">Enviar</button>
                                 </form>
                             </fieldset>
                         </div>
@@ -469,6 +474,7 @@
         </footer>
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/app.js"></script>
 </body>
 
