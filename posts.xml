@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<post>
+		<id>1</id>
+		<Permalink>https://totalsecurity.mx/Blog/generales/hello-world/</Permalink>
+		<Title>Hello world!</Title>
+		<Content><![CDATA[<!-- wp:paragraph -->
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+<!-- /wp:paragraph -->]]></Content>
+		<ImageURL></ImageURL>
+	</post>
+	<post>
+		<id>37</id>
+		<Permalink>https://totalsecurity.mx/Blog/generales/post-de-prueba/</Permalink>
+		<Title>Post de Prueba</Title>
+		<Content><![CDATA[<!-- wp:paragraph -->
+<p>Este es un Post de prueba</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":42,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://totalsecurity.mx/Blog/wp-content/uploads/2023/09/candado-1024x1009.png" alt="" class="wp-image-42"/></figure>
+<!-- /wp:image -->]]></Content>
+		<ImageURL>https://totalsecurity.mx/Blog/wp-content/uploads/2023/09/candado.png</ImageURL>
+	</post>
+</data>
