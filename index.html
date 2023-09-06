@@ -263,10 +263,9 @@
             <!-- BLOG -->
             <section id="blog">
 
-                <id class="contBlog">
-
-
-                </id>
+                <div class="contBlog" id="latest-posts">
+                    <!-- El contenido del feed RSS se cargará aquí -->
+                </div>
             </section>
 
             <section class="contCotiza" id="cotizacion">
@@ -286,21 +285,20 @@
                                 </p>
                                 <p>y nos pondremos en contacto contigo lo más pronto posible.</p>
 
-                                <form class="form__inputs" action="#" id="formulario">
+                                <form method="POST" class="form__inputs" action="./contacto.php" id="formulario">
                                     <!-- <label for="nombre"></label> -->
-                                    <input class="form__item" 
-                                    type="text" name="name" placeholder="*Nombre">
+                                    <input class="form__item" type="text" name="name" placeholder="*Nombre">
                                     <input class="form__item" type="text" name="apellido" placeholder="*Apellido">
-                                    <input class="form__item" type="string" name="mail" placeholder="*Email">
-                                    <input class="form__item" type="string" name="phone" placeholder="*Teléfono">
-                                    <input class="form__item" type="text" name="proyecto" placeholder="*Tipo de proyecto">
-                                    <input class="form__item" name="presupuesto "type="string" placeholder="*Presupuesto">
-                                    <textarea name="message" class="form__item" name="" id="" cols="60" rows="10"
+                                    <input class="form__item" type="email" name="mail" placeholder="*Email">
+                                    <input class="form__item" type="number" name="phone" placeholder="*Teléfono">
+                                    <input class="form__item" type="text" name="proyecto"
+                                        placeholder="*Tipo de proyecto">
+                                    <input class="form__item" name="presupuesto" type="number"
+                                        placeholder="*Presupuesto">
+                                    <textarea name="message" class="form__item"  cols="60" rows="10"
                                         placeholder="Describe cualquier restricción o desafío particular que debamos tener en cuenta al diseñar las soluciones de seguridad"></textarea>
 
-                                        <button 
-                                        class="btnContacto--form"
-                                        id="submit" type="submit">Enviar</button>
+                                    <button class="btnContacto--form" id="envia" type="submit">Enviar</button>
                                 </form>
                             </fieldset>
                         </div>
@@ -474,8 +472,10 @@
         </footer>
 
     </main>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/app.js"></script>
+
 </body>
 
 </html>
