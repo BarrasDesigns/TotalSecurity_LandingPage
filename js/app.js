@@ -17,7 +17,6 @@ xhr.onreadystatechange = function () {
         html += '</ul>';
         document.getElementById('blog__item').innerHTML = html;
       }
-      document.getElementById('footer__titulos').innerHTML = html;
 };
 xhr.send();
 
