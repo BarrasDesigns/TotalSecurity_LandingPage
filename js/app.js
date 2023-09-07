@@ -1,5 +1,5 @@
 let xhr = new XMLHttpRequest();
-xhr.open('GET', '../posts.xml', true);
+xhr.open('GET', './posts.xml', true);
 xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
         let xmlDoc = xhr.responseXML;
@@ -16,7 +16,7 @@ xhr.onreadystatechange = function () {
 
         html += '</ul>';
         document.getElementById('blog__item').innerHTML = html;
-      }
+    }
 };
 xhr.send();
 

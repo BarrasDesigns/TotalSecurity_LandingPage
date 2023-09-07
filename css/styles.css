@@ -491,7 +491,7 @@ input:checked+.slide-container .nav label {
 
 @media (max-width: 960px) {
   .clientesItem {
-    max-width: 16%;
+    max-width: 14%;
   }
 
 }
