@@ -538,7 +538,7 @@ input:checked+.slide-container .nav label {
 
 .proyectos__icon {
   width: 20%;
-
+  padding-bottom: 234px;
 }
 
 .proyectos__item>hr {
@@ -567,8 +567,7 @@ input:checked+.slide-container .nav label {
 .proyectos__text {
   position: absolute;
   width: 100%;
-  margin: 0;
-  padding: 2px;
+  font-size: 13px;
 }
 
 .proyectos__item:nth-child(1) {
@@ -604,12 +603,27 @@ input:checked+.slide-container .nav label {
   .proyectos__item {
     grid-column-start: 1 !important;
   }
+  .proyectos__icon{
+    width: 17%;
+    padding-bottom: 239px;
+  }
+  .proyectos__text{
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 469px) and (max-width: 960px) {
   .proyectos {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+  }
+  .proyectos__icon{
+    
+    
+  }
+  .proyectos__text{
+
+    font-size: 12px;
   }
 
   .proyectos__item:nth-child(1) {
