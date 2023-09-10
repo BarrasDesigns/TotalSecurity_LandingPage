@@ -489,30 +489,32 @@ input:checked+.slide-container .nav label {
   /* animation-duration: 12s; */
   /* animation-direction: normal; */
   /* animation-iteration-count: infinite; */
-  animation: clientesCarrusel 6s linear infinite;
+  animation: clientesCarrusel 15s linear infinite;
 }
 
 @keyframes clientesCarrusel {
-
+  0% {
+    transform: translateX(-1300px);
+  }
+  100% {
+    transform: translateX(1300px); 
+  }
+  /* 
   0%,
   100% {
     transform: translateX(0);
   }
-
   25% {
-    transform: translateX(-25%);
-    /* Move items left */
+    transform: translateX(100%);
   }
 
   50% {
     transform: translateX(-50%);
-    /* Move items left further */
   }
 
   75% {
     transform: translateX(100%);
-    /* Move items left even further */
-  }
+  } */
 
 
 }
