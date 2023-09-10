@@ -17,11 +17,13 @@ html {
   box-sizing: inherit;
 
 }
-p{
+
+p {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -238,9 +240,44 @@ a {
   padding: 4px;
   margin-top: 10px;
 }
-
-.btnContacto--form {
+.btnContacto--form1{
+  padding: 27px;
+  font-size: 13px;
+}
+.btnContacto--form1>button {
   margin: 0 auto;
+  border: 2px solid red;
+  background: white;
+  color: red;
+  border-radius: 8px;
+  padding: 8px;
+  /* margin-top: 10px; */
+}
+
+.btnContacto--form1>button:hover {
+  border: 2px solid white;
+  background: red;
+  color: white;
+
+}
+
+.btnContacto--form2 {
+  margin: 0 auto;
+  background: #fe0000;
+  color: white;
+  border-radius: 8px;
+  padding: 4px;
+  /* margin-top: 10px; */
+}
+
+.btn--verTodos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn--verTodos>a {
+  /* margin: 0 auto; */
   background: #fe0000;
   color: white;
   border-radius: 8px;
@@ -603,11 +640,13 @@ input:checked+.slide-container .nav label {
   .proyectos__item {
     grid-column-start: 1 !important;
   }
-  .proyectos__icon{
+
+  .proyectos__icon {
     width: 17%;
     padding-bottom: 239px;
   }
-  .proyectos__text{
+
+  .proyectos__text {
     font-size: 14px;
   }
 }
@@ -617,11 +656,10 @@ input:checked+.slide-container .nav label {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
-  .proyectos__icon{
-    
-    
-  }
-  .proyectos__text{
+
+  .proyectos__icon {}
+
+  .proyectos__text {
 
     font-size: 12px;
   }
@@ -654,25 +692,35 @@ input:checked+.slide-container .nav label {
 /* TERMINA PROYECTOS  */
 
 /* BLOG */
-.contBlog{
-  overflow-x: scroll; 
+.blog {
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-padding: 25px;
   column-gap: 10px;
 
 
 }
+
 figure>img {
   max-width: 30%;
 }
+.blog__title{
+  padding-top: 6dvh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.blog__title>h2{
+  font-size: 43px;
 
-#blog__item {
+}
+#blog__body {
   display: flex;
   width: 1000px;
   height: 431px;
 }
 
-#blog__item>ul {
+#blog__body>ul {
   padding: 20px;
   text-align: center;
   border-radius: 50px;
@@ -680,21 +728,90 @@ figure>img {
   display: flex;
   justify-content: space-evenly;
 }
-#blog__item>ul>li{
+
+#blog__body>ul>li {
   box-shadow: 4px 6px 15px -3px rgba(0, 0, 0, 0.74);
   margin: 0px 3px 0px 3px;
   border-radius: 20px;
 }
-#blog__item>ul>li>a{
+
+#blog__body>ul>li>a {
   color: var(--black);
 }
+
+.blog__footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.blog__footer--title{
+  font-size: 43px;
+  display: flex;
+  justify-content: center;
+}
+.blog__footer--form>form {
+  display: flex;
+  flex-direction: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.datos--form1 {
+  display: flex;
+  flex-direction: column;
+}
+.datos--form1>input{
+  
+  border-width: 0px 0px 1px;
+  border-color: red;
+  font-size: 14px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+  padding-bottom: 5px;
+  
+}
+.politica {
+  display: flex;
+
+}
+.politica>label{
+  padding: 10px;
+}
+
 @media (min-width: 960px) {
-  #blog__item{
+  #blog__body {
     width: 100%;
   }
 }
+
+@media (min-width: 200px) and (max-width: 960px){
+  .blog__footer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog__title > h2 {
+    font-size: 26px;
+  }
+  .blog__footer--title{
+    font-size: 17px;
+  }
+  .blog__footer--form>form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+    font-size: 15px;
+  }
+  .datos--form1 {
+    
+    width: 100%;
+    align-items: center;
+  }
+  
+}
 /* TERMINA BLOG */
-/* FORMULARIO DE COTIZACION */
+/* form2 FORMULARIO DE COTIZACION */
 .contCotiza {
   width: 100%;
   height: 1000px;
@@ -727,13 +844,13 @@ fieldset {
   border: transparent
 }
 
-.form {
+.form2 {
   display: flex;
   justify-content: center;
   z-index: 10;
 }
 
-.form__fieldset {
+.form2__fieldset {
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -741,18 +858,18 @@ fieldset {
 
 }
 
-.form__head {
+.form2__head {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.form__item {
+.form2__item {
   border: solid 2px #000;
   border-radius: 7px;
 }
 
-.form__inputs {
+.form2__inputs {
   height: 358px;
   display: grid;
   grid-template-areas:
@@ -763,36 +880,36 @@ fieldset {
   gap: 30px;
 }
 
-.form__item:nth-child(1) {
+.form2__item:nth-child(1) {
   grid-area: Nombre;
 }
 
-.form__item:nth-child(2) {
+.form2__item:nth-child(2) {
   grid-area: Apellido;
 }
 
-.form__item:nth-child(3) {
+.form2__item:nth-child(3) {
   grid-area: Email;
 }
 
-.form__item:nth-child(4) {
+.form2__item:nth-child(4) {
   grid-area: Telefono;
 }
 
-.form__item:nth-child(5) {
+.form2__item:nth-child(5) {
   grid-area: Proyecto;
 }
 
-.form__item:nth-child(6) {
+.form2__item:nth-child(6) {
   grid-area: Presupuesto;
 }
 
-.form__item:nth-child(7) {
+.form2__item:nth-child(7) {
   grid-area: TextArea;
 }
 
 @media (min-width: 264px) and (max-width:468px) {
-  .form__item {
+  .form2__item {
     width: 90%;
   }
 }
@@ -806,15 +923,15 @@ fieldset {
     margin: 0px;
   }
 
-  .form {
+  .form2 {
     margin-bottom: 61%;
   }
 
-  .form__item {
+  .form2__item {
     width: 90%;
   }
 
-  .form__inputs {
+  .form2__inputs {
     grid-template-areas: "Nombre"
       "Apellido"
       "Email"
@@ -842,7 +959,7 @@ fieldset {
 
 }
 
-/* TERMINA FORMULARIO  */
+/* TERMINA form2 FORMULARIO  */
 /* FOOTER */
 a {
   color: var(--white);

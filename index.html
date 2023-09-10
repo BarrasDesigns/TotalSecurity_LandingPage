@@ -27,10 +27,10 @@
             </div>
             <nav class="hamburger" id="nav">
                 <ul>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#proyectos">Servicios</a></li>
+                    <li><a href="#footer">Nosotros</a></li>
                     <li><a href="https://totalsecurity.mx/Blog/">Blog</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#clientes">Proyectos</a></li>
                     <li><a href="#cursos">Cursos</a></li>
                     <li><a href="#cotizacion">Contacto</a></li>
                 </ul>
@@ -41,11 +41,11 @@
 
         <div class="nav__menu">
             <ul class="nav__list">
-                <li class="menuLink text-style-underline"><a href="#servicios">Servicios</a></li>
-                <li class="menuLink text-style-underline"><a href="#">Nosotros</a></li>
+                <li class="menuLink text-style-underline"><a href="#proyectos">Servicios</a></li>
+                <li class="menuLink text-style-underline"><a href="#footer">Nosotros</a></li>
                 <li class="menuLink text-style-underline"><a href="https://totalsecurity.mx/Blog/">Blog</a></li>
-                <li class="menuLink text-style-underline"><a href="#proyectos">Proyectos</a></li>
-                <li class="menuLink text-style-underline"><a href="#">Cursos</a></li>
+                <li class="menuLink text-style-underline"><a href="#clientes">Proyectos</a></li>
+                <li class="menuLink text-style-underline"><a href="#cursos">Cursos</a></li>
                 <li>
 
                     <a class="btnContacto" href="#cotizacion">Contacto</a>
@@ -176,7 +176,7 @@
 
             <!-- </section> -->
             <!-- NUESTROS CLIENTES -->
-            <section class="contClientes" id="#clientes">
+            <section id="clientes" class="contClientes">
                 <div class="CarruselClientes">
                     <img class="clientesItem" src="./img/señorlatino.png" alt="seniorlatino">
                     <img class="clientesItem" src="./img/Quality.png" alt="quality">
@@ -280,53 +280,88 @@
             <!-- BLOG -->
             <section>
 
-                <div class="contBlog">
+                <div class="blog">
+                    <div class="blog__title">
+                        <h2>Últimos Posts</h2>
 
-                    <div id="blog__item">
+                    </div>
+                    <div id="blog__body">
                         <!-- El contenido del feed RSS se cargará aquí -->
                     </div>
-                </div>
-            </section>
+                    <div class="btn--verTodos">
 
-            <section class="contCotiza" id="cotizacion">
-                <div class="candado">
-                    <div class="contenido-candado">
+                        <a href="" >Ver Todos</a>
+                    </div>
+                    <div class="blog__footer">
+                        <div class="blog__footer--title">
+
+                            <h2 style="font-weight: 400;">SUSCRÍBETE A <br><span style="font-weight: 700;">NUESTRO BLOG</span></h2>
+                        </div>
+                        <div class="blog__footer--form">
+                            <form action="">
+                                <div class="datos--form1">
 
 
-                        <!-- Formulario Cotizacion -->
-                        <div class="form">
-                            <!-- <h2>¡Cotiza Ahora!</h2> -->
-                            <fieldset class="form__fieldset">
-                                <legend class="form__head">
-                                    <h2>¡Cotiza Ahora!</h2>
-                                </legend>
+                                    <label for="nombre">Tu Nombre</label>
+                                    <input type="text" id="nombre" tabindex="2" minlength="5" required>
+                                    <label for="email" >Tu Email</label>
+                                    <input type="email" id="email" tabindex="2" minlength="5" required>
+                                    <div class="politica">
 
-                                <p>Llena el formulario a continuación compártenos los detalles de tus necesidades <br>
-                                </p>
-                                <p>y nos pondremos en contacto contigo lo más pronto posible.</p>
+                                        <input type="checkbox" id="politica">
+                                        <label for="politica">Acepto la <a href="#" style="color: red;">política de
+                                                privacidad</a></label>
+                                    </div>
+                                </div>
+                                <div class="btnContacto--form1">
 
-                                <form method="POST" class="form__inputs" action="./contacto.php" id="formulario">
-                                    <!-- <label for="nombre"></label> -->
-                                    <input class="form__item" type="text" name="name" placeholder="*Nombre">
-                                    <input class="form__item" type="text" name="apellido" placeholder="*Apellido">
-                                    <input class="form__item" type="email" name="mail" placeholder="*Email">
-                                    <input class="form__item" type="number" name="phone" placeholder="*Teléfono">
-                                    <input class="form__item" type="text" name="proyecto"
-                                        placeholder="*Tipo de proyecto">
-                                    <input class="form__item" name="presupuesto" type="number"
-                                        placeholder="*Presupuesto">
-                                    <textarea name="message" class="form__item" cols="60" rows="10"
-                                        placeholder="Describe cualquier restricción o desafío particular que debamos tener en cuenta al diseñar las soluciones de seguridad"></textarea>
+                                    <button type="sumbit">¡ME APUNTO!</button>
+                                </div>
+                            </form>
 
-                                    <button class="btnContacto--form" id="envia" type="submit">Enviar</button>
-                                </form>
-                            </fieldset>
                         </div>
                     </div>
                 </div>
-            </section>
         </div>
-        <footer>
+        </section>
+
+        <section class="contCotiza" id="cotizacion">
+            <div class="candado">
+                <div class="contenido-candado">
+
+
+                    <!-- Formulario Cotizacion -->
+                    <div class="form2">
+                        <!-- <h2>¡Cotiza Ahora!</h2> -->
+                        <fieldset class="form2__fieldset">
+                            <legend class="form2__head">
+                                <h2>¡Cotiza Ahora!</h2>
+                            </legend>
+
+                            <p>Llena el formulario a continuación compártenos los detalles de tus necesidades <br>
+                            </p>
+                            <p>y nos pondremos en contacto contigo lo más pronto posible.</p>
+
+                            <form method="POST" class="form2__inputs" action="./contacto.php" id="formulario">
+                                <!-- <label for="nombre"></label> -->
+                                <input class="form2__item" type="text" name="name" placeholder="*Nombre">
+                                <input class="form2__item" type="text" name="apellido" placeholder="*Apellido">
+                                <input class="form2__item" type="email" name="mail" placeholder="*Email">
+                                <input class="form2__item" type="number" name="phone" placeholder="*Teléfono">
+                                <input class="form2__item" type="text" name="proyecto" placeholder="*Tipo de proyecto">
+                                <input class="form2__item" name="presupuesto" type="number" placeholder="*Presupuesto">
+                                <textarea name="message" class="form2__item" cols="60" rows="10"
+                                    placeholder="Describe cualquier restricción o desafío particular que debamos tener en cuenta al diseñar las soluciones de seguridad"></textarea>
+
+                                <button class="btnContacto--form2" id="envia" type="submit">Enviar</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <footer id="footer">
             <div class="footer__enlaces">
 
                 <div class="footer__item">
