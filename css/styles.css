@@ -242,9 +242,11 @@ a {
 }
 .btnContacto--form1{
   padding: 27px;
-  font-size: 13px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
 }
-.btnContacto--form1>button {
+.btnContacto--form1>a {
   margin: 0 auto;
   border: 2px solid red;
   background: white;
@@ -254,7 +256,7 @@ a {
   /* margin-top: 10px; */
 }
 
-.btnContacto--form1>button:hover {
+.btnContacto--form1>a:hover {
   border: 2px solid white;
   background: red;
   color: white;
