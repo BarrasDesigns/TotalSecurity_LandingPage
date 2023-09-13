@@ -9,9 +9,11 @@ xhr.onreadystatechange = function () {
         for (let i = 0; i < items.length; i++) {
             let title = items[i].getElementsByTagName('Title')[0].textContent;
             let link = items[i].getElementsByTagName('Permalink')[0].textContent;
-            let description = items[i].getElementsByTagName('Content')[0].textContent;
+            let image = items[i].getElementsByTagName('ImageFeatured')[0].textContent;
             
-            html += '<li><a href="' + link + '">' + title + '<p>' + description + '</p></a></li>';
+            //let description = items[i].getElementsByTagName('Content')[0].textContent;
+            
+            html += '<li><a href="' + link + '"><h4>' + title + '</h4> <img src= "'+image+'" width="300" height="200"/></a></li>';
         }
 
         html += '</ul>';
@@ -34,5 +36,3 @@ document.getElementById('envia').onclick = function(){
     text: "En breve nos comunicaremos contigo."
   });
 }
-
-

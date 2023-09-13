@@ -1,25 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
 	<post>
-		<id>1</id>
-		<Permalink>https://totalsecurity.mx/Blog/generales/hello-world/</Permalink>
-		<Title>Hello world!</Title>
+		<id>51</id>
+		<Permalink>https://totalsecurity.mx/Blog/generales/de-lineas-telefonicas-a-los-sistemas-de-comunicacion-5g/</Permalink>
+		<Title>De líneas telefónicas a los sistemas de comunicación 5G</Title>
 		<Content><![CDATA[<!-- wp:paragraph -->
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
-<!-- /wp:paragraph -->]]></Content>
-		<ImageURL></ImageURL>
-	</post>
-	<post>
-		<id>37</id>
-		<Permalink>https://totalsecurity.mx/Blog/generales/post-de-prueba/</Permalink>
-		<Title>Post de Prueba</Title>
-		<Content><![CDATA[<!-- wp:paragraph -->
-<p>Este es un Post de prueba</p>
+<p>Hablando de alarmas y servicios de monitoreo, veamos la realidad. Fabricantes y distribuidores buscan introducir sistemas de alarma "conectados", pero muchos integradores y centros de monitoreo siguen ofreciendo sistemas convencionales. Los clientes exigen más por menos dinero, típico de los mercados masivos.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:image {"id":42,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://totalsecurity.mx/Blog/wp-content/uploads/2023/09/candado-1024x1009.png" alt="" class="wp-image-42"/></figure>
-<!-- /wp:image -->]]></Content>
-		<ImageURL>https://totalsecurity.mx/Blog/wp-content/uploads/2023/09/candado.png</ImageURL>
+<!-- wp:paragraph -->
+<p>Un sistema de alarma "conectado" tiene comunicación bidireccional con un centro de monitoreo o una nube. Esto permite interactuar con dispositivos, obtener información en tiempo real e integración. Los sistemas convencionales se limitan a enviar señales unidireccionales y no ofrecen interactividad.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Los sistemas que usan línea telefónica son ejemplos de sistemas convencionales, limitados y poco seguros. Estos sistemas deberían ser cosa del pasado, pero persisten debido a su bajo costo, aunque a menudo resultan en pérdidas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Los sistemas conectados, por otro lado, ofrecen más posibilidades, pero a menudo a un costo mayor. Esto ha llevado a preocupaciones entre las compañías de monitoreo.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Sin embargo, los sistemas convencionales se han actualizado con comunicación GPRS, 3G e IP, mejorando la seguridad y la interactividad. Esta es una opción intermedia entre lo convencional y lo conectado.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>¿Vale la pena dar este paso intermedio? Para muchos usuarios en América Latina, sí. Muchos aún utilizan líneas telefónicas y cambiar completamente el hardware es costoso. Agregar una pieza de hardware para mejorar el servicio, reducir costos y brindar interactividad tiene sentido.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La integración de dispositivos de diferentes marcas en una única aplicación móvil o servicio web es posible gracias a plataformas en la nube cada vez más flexibles y asequibles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>El cambio debe ser gradual, migrando primero a sistemas de transmisión IP, GPRS y 3G, lo que eleva el servicio y refresca la relación con los clientes. La comunicación constante con los clientes, proporcionando información crítica de seguridad, consejos y promociones, es esencial. Las aplicaciones móviles personalizadas desempeñan un papel clave.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cambiar ahora prepara un futuro positivo. Si no, el mercado forzará cambios abruptos. Los servicios de monitoreo tienen un gran potencial de crecimiento en un mercado en constante evolución.</p>
+<!-- /wp:paragraph -->]]></Content>
+		<ImageURL>https://totalsecurity.mx/Blog/wp-content/uploads/2023/09/De-lineas-01-scaled.jpg</ImageURL>
+	</post>
+	<post>
+		<id>54</id>
+		<Permalink>https://totalsecurity.mx/Blog/generales/que-es-la-tecnologia-colorvu/</Permalink>
+		<Title>¿Qué es la tecnología ColorVu?</Title>
+		<Content><![CDATA[<!-- wp:paragraph -->
+<p>Cuando hablamos de seguridad y protección, la visión detallada es esencial, incluso en condiciones de poca luz.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>La tecnología líder de la industria, ColorVu de Hikvision, captura videos de alta calidad y a todo color las 24 horas del día, los 7 días de la semana. Esto brinda la misma nitidez que la luz del día, lo que permite proteger personas y propiedades durante la noche.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>ColorVu potencia una variedad de productos y soluciones para satisfacer diversas necesidades de seguridad. Las cámaras panorámicas de Hikvision con ColorVu ofrecen un campo de visión horizontal de 180 grados, brindando panoramas brillantes con detalles vívidos. Esto mejora el conocimiento de la situación y reduce la cantidad de cámaras necesarias.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Las cámaras varifocales de Hikvision con ColorVu se adaptan a diferentes escenarios al ajustar la distancia focal. Su apertura F1.0 fija garantiza un brillo óptimo, independientemente de la distancia.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Estas cámaras generan imágenes vibrantes en condiciones de poca luz, incluso con 0.0005 lux, equivalente a una noche sin luna y estrellas. Esto se logra gracias a una súper apertura F1.0 que maximiza la captura de luz y a un sensor grande de 1/1.2".</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Cuando se combina ColorVu con AcuSense, las cámaras pueden capturar humanos y vehículos con colores vivos. Además, la detección de movimiento 2.0 con tecnología AcuSense distingue entre humanos, vehículos y otros objetos, mejorando la eficiencia en la reproducción de video y la búsqueda de imágenes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Los modelos con Live Guard disuaden a los intrusos con advertencias visuales y auditivas mientras notifican a los usuarios de forma remota</p>
+<!-- /wp:paragraph -->]]></Content>
+		<ImageURL>https://totalsecurity.mx/Blog/wp-content/uploads/2023/09/ColorVu-01-scaled.jpg</ImageURL>
+	</post>
+	<post>
+		<id>57</id>
+		<Permalink>https://totalsecurity.mx/Blog/generales/automatizacion-paso-a-paso-para-convertir-tu-hogar-en-una-casa-inteligente/</Permalink>
+		<Title>Automatización: Paso a paso para convertir tu hogar en una casa inteligente.</Title>
+		<Content><![CDATA[<!-- wp:paragraph -->
+<p>¿Te gusta simplificar la vida con la ayuda de internet y aplicaciones? Entonces, la automatización del hogar es tu próximo paso. En una casa inteligente, puedes controlar la iluminación, activar dispositivos de sonido, gestionar electrodomésticos y mejorar la seguridad, entre otras cosas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Vivir en una casa inteligente significa tener el control literalmente en tus manos. Los dispositivos se comunican entre sí, y los puedes manejar mediante voz o aplicaciones. Esto te permite automatizar tareas y acceder a información sobre tu hogar de manera eficiente.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Aquí te mostramos cómo transformar tu hogar en una casa inteligente:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><!-- wp:list-item -->
+<li><strong>Conexión a Internet</strong>: El servicio de internet es esencial para conectar y gestionar los dispositivos inteligentes en tu hogar. Asegúrate de contar con un servicio de alta velocidad, al menos 5 Mbps, para un funcionamiento óptimo. Algunas tecnologías Bluetooth funcionan dentro del rango de alcance, pero si deseas controlar tus dispositivos desde fuera de casa, necesitarás una conexión a internet.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Revisión de la Instalación Eléctrica</strong>: Dado que los dispositivos inteligentes requieren energía, es importante revisar y, si es necesario, actualizar la instalación eléctrica para evitar problemas como sobrecargas. Un electricista experto puede encargarse de esta revisión y realizar las mejoras necesarias.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Elección del Sistema de Automatización</strong>: Selecciona un sistema central para controlar tu casa inteligente. Muchos dispositivos inteligentes funcionan con aplicaciones propias y son compatibles con asistentes de voz como Amazon Echo, Alexa, Google Home y Apple HomePod. Asegúrate de que tus dispositivos sean compatibles con el sistema que elijas.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Construcción de tu Hogar Inteligente</strong>: Una vez hayas elegido tu sistema de control, puedes comenzar a construir tu hogar inteligente. Empieza por elegir una categoría de dispositivos, como iluminación, seguridad, electrodomésticos, entretenimiento, y busca productos compatibles con tu sistema. Avanza gradualmente, integrando dispositivos inteligentes en tu hogar.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>Disfruta de tu Hogar Inteligente</strong>: Controla tus dispositivos y automatiza tareas para hacer tu vida más cómoda y eficiente.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>Recuerda tener en cuenta el idioma, la facilidad de instalación, el precio, la capacidad de múltiples usuarios y la garantía al elegir tus dispositivos inteligentes. Comienza tu viaje hacia una casa inteligente hoy mismo y experimenta la comodidad y la eficiencia que ofrece la automatización del hogar.</p>
+<!-- /wp:paragraph -->]]></Content>
+		<ImageURL>https://totalsecurity.mx/Blog/wp-content/uploads/2023/09/FormatoPortadasBlog-01-scaled.jpg|https://totalsecurity.mx/Blog/wp-content/uploads/2023/09/smarthome-01-scaled.jpg</ImageURL>
 	</post>
 </data>
