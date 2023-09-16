@@ -462,7 +462,7 @@ input:checked+.slide-container .nav label {
   .carousel-dot {
     display: none;
   }
-
+  
 }
 
 /* TERMINA CARRUSEL */
@@ -475,50 +475,55 @@ input:checked+.slide-container .nav label {
 }
 
 /* NUESTROS CLIENTES */
-.CarruselClientes {
-  /* width: 100%; */
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.carrusel {
   overflow: hidden;
-  /* height: 150px; */
-}
-
-.clientesItem {
-  max-width: 10%;
+  /* padding: 60px 0; */
+  background: white;
+  white-space: nowrap;
   position: relative;
-  /* animation-name: clientesCarrusel; */
-  /* animation-duration: 12s; */
-  /* animation-direction: normal; */
-  /* animation-iteration-count: infinite; */
-  animation: clientesCarrusel 15s linear infinite;
 }
 
-@keyframes clientesCarrusel {
-  0% {
-    transform: translateX(-1300px);
-  }
-  100% {
-    transform: translateX(1300px); 
-  }
-  /* 
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(100%);
-  }
+.carrusel:before,
+.carrusel:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
 
-  50% {
-    transform: translateX(-50%);
-  }
+.carrusel:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
 
-  75% {
-    transform: translateX(100%);
-  } */
+.carrusel:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
 
+.carrusel:hover .carrusel-slide {
+  animation-play-state: paused;
+}
 
+.carrusel-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.carrusel-slide img {
+  max-width: 100px;
+  margin: 0 40px;
 }
 
 .titulo1,
