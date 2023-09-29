@@ -289,6 +289,7 @@ a {
 
 
 /* CARRUSEL */
+
 .carousel {
   /* margin-left: 15%;
   margin-right: 15%; */
@@ -379,6 +380,21 @@ ul.slides input {
   text-align: right;
   right: 0;
 }
+.active {
+  background-color: #ee0606 !important;
+ 
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
 
 .carousel-dots {
   position: absolute;
@@ -395,7 +411,7 @@ ul.slides input {
   width: 19%;
   height: 7px;
   border-radius: 3%;
-  background-color: #ee0606;
+  background-color: #ce7777;
   opacity: 0.5;
   margin: 1px;
 }
