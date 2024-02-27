@@ -1,67 +1,50 @@
 let slideIndex = 0;
 let slides = document.getElementsByClassName("slide-image");
 let dots = document.getElementsByClassName("carousel-dot");
+let timer;
 
 
+const resetTimer = () => {
+  clearTimeout(timer);
+
+};
 showSlides();
 function showSlides() {
 
-  let i;
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    dots[i].classList.remove("active");
+    let i;
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      dots[i].classList.remove("active");
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add("active");
+
+    resetTimer();
+    timer = setTimeout(() => showSlides(1), 5000);
+
+    console.log(slideIndex);
+    
   }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
 
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active");
 
-  setTimeout(showSlides, 2000); // Cambiar cada 2 segundos
-  console.log(slideIndex);
+
+
+function changeSlideByButton(n) {
+
+  slides.length += n;
+
+  resetTimer();
+  timer = setTimeout(() => changeSlideByButton(1), 1000);
+  
+
+  showSlides();
+
 }
-
-function changeSlide(n, slide) {
-  if (changeSlide.addEventListener("click")) {
-    switchSlide();
-  }
-  else {
-    showSlides(slideIndex += n);
-  }
-}
-
-// function currentSlide(n) {
-//   slideIndex = n;
-//   if (slideIndex >= slides.length) { slideIndex = 0; }
-//   if (slideIndex < 0) { slideIndex = slides.length - 1; }
-//   showSlides();
-
-// }
-// function showSlides(n) {
-//   if (n === undefined) { n = ++slideIndex }
-//   if (n >= slides.length) { slideIndex = 0 }
-//   if (n < 0) { slideIndex = slides.length - 1 }
-
-//   for (let i = 0; i < 5 ; i++) {
-//       slides[i].style.display = "none";
-//       dots[i].classList.remove("active");
-//     }
-
-//     slides[slideIndex].style.display = "block";
-//     dots[slideIndex].classList.add("active");
-
-//     setTimeout(() => {
-//       showSlides(slideIndex + 1);
-//     }, 100);
-//   }
-// console.log(currentSlide.length);
-
-// for (let i = 0; i < 5; i++) {
-//     dots[i].addEventListener("click", function () {
-//         currentSlide(i);
-//       });
-//     }
 
 
 // let xhr = new XMLHttpRequest();

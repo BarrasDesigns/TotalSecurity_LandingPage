@@ -59,7 +59,6 @@
 <body>
     <main>
         <div id="wrapper">
-
             <!-- CHAT -->
             <div class="chat">
                 <li class="chat__link">
@@ -88,10 +87,10 @@
                                 <img src="./img/carrusel/1.jpg">
                             </div>
                             <div class="carousel-controls">
-                                <label class="prev-slide" onclick="changeSlide(-1)">
+                                <label class="prev-slide" onclick="changeSlideByButton(- 1)">
                                     <span>&lsaquo;</span>
                                 </label>
-                                <label class="next-slide" onclick="changeSlide(1)">
+                                <label class="next-slide" onclick="changeSlideByButton( 1)">
                                     <span>&rsaquo;</span>
                                 </label>
                             </div>
@@ -102,14 +101,14 @@
                             <div class="slide-image fade">
                                 <img src="./img/carrusel/2.jpg">
                             </div>
-                            <div class="carousel-controls">
-                                <label class="prev-slide" onclick="changeSlide(-1)">
+                            <!-- <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
                                     <span>&lsaquo;</span>
                                 </label>
-                                <label class="next-slide" onclick="changeSlide(1)">
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
                                     <span>&rsaquo;</span>
                                 </label>
-                            </div>
+                            </div> -->
                         </li>
                         <!-- CARRUSEL 3 -->
                         <input type="radio" name="radio-buttons" id="img-3" />
@@ -117,14 +116,14 @@
                             <div class="slide-image fade">
                                 <img src="./img/carrusel/3.jpg">
                             </div>
-                            <div class="carousel-controls">
-                                <label class="prev-slide" onclick="changeSlide(-1)">
+                            <!-- <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
                                     <span>&lsaquo;</span>
                                 </label>
-                                <label class="next-slide" onclick="changeSlide(1)">
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
                                     <span>&rsaquo;</span>
                                 </label>
-                            </div>
+                            </div> -->
                         </li>
                         <!-- CARRUSEL 4 -->
                         <input type="radio" name="radio-buttons" id="img-4" />
@@ -132,14 +131,14 @@
                             <div class="slide-image fade">
                                 <img src="./img/carrusel/4.jpg">
                             </div>
-                            <div class="carousel-controls">
-                                <label class="prev-slide" onclick="changeSlide(-1)">
+                            <!-- <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
                                     <span>&lsaquo;</span>
                                 </label>
-                                <label class="next-slide" onclick="changeSlide(1)">
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
                                     <span>&rsaquo;</span>
                                 </label>
-                            </div>
+                            </div> -->
                         </li>
                         <!-- CARRUSEL 5 -->
                         <input type="radio" name="radio-buttons" id="img-5" />
@@ -147,22 +146,22 @@
                             <div class="slide-image fade">
                                 <img src="./img/carrusel/5.png">
                             </div>
-                            <div class="carousel-controls">
-                                <label class="prev-slide" onclick="changeSlide(-1)">
+                            <!-- <div class="carousel-controls">
+                                <label class="prev-slide" onclick="changeSlideByButton(-1)">
                                     <span>&lsaquo;</span>
                                 </label>
-                                <label class="next-slide" onclick="changeSlide(1)">
+                                <label class="next-slide" onclick="changeSlideByButton(1)">
                                     <span>&rsaquo;</span>
                                 </label>
-                            </div>
+                            </div> -->
                         </li>
                         <div class="carousel-dots">
-                            <span class="carousel-dot" onclick="currentSlide(0)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(1)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(2)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(3)"></span>
-                            <span class="carousel-dot" onclick="currentSlide(4)"></span>
-                            
+                            <span class="carousel-dot" onclick="changeSlideByButton(1)"></span>
+                            <span class="carousel-dot" onclick="changeSlideByButton(2)"></span>
+                            <span class="carousel-dot" onclick="changeSlideByButton(3)"></span>
+                            <span class="carousel-dot" onclick="changeSlideByButton(4)"></span>
+                            <span class="carousel-dot" onclick="changeSlideByButton(5)"></span>
+
 
                     </ul>
                 </div>
@@ -545,7 +544,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/app.js"></script>
-    
+
 </body>
 
 </html>
