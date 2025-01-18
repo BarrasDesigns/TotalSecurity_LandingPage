@@ -1,50 +1,54 @@
-let slideIndex = 0;
+/* let slideIndex = 0;
 let slides = document.getElementsByClassName("slide-image");
 let dots = document.getElementsByClassName("carousel-dot");
 let timer;
 
-
 const resetTimer = () => {
   clearTimeout(timer);
-
 };
-showSlides();
-function showSlides() {
-
-
-    let i;
-
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-      dots[i].classList.remove("active");
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].classList.add("active");
-
-    resetTimer();
-    timer = setTimeout(() => showSlides(1), 5000);
-
-    console.log(slideIndex);
-    
-  }
-
-
-
 
 function changeSlideByButton(n) {
+  showSlides(slideIndex += n);
 
-  slides.length += n;
-
-  resetTimer();
-  timer = setTimeout(() => changeSlideByButton(1), 1000);
   
-
-  showSlides();
-
 }
+
+showSlides();
+function showSlides(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  } else if (n < 1) {
+    slideIndex = slides.length;
+  }
+  
+  resetTimer();
+  
+  let i;
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    dots[i].classList.remove("active");
+  }
+  
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+  
+  resetTimer();
+  
+  timer = setTimeout(() => showSlides(1), 5000);
+  console.log(slideIndex);
+  console.log("slideIndex:", slideIndex);
+  console.log("slides.length:", slides.length);
+  console.log("slides[slideIndex - 1]:", slides[slideIndex - 1]);
+}
+
+ */
+
+
+// resetTimer();
+// timer = setTimeout(() => changeSlideByButton(1), 9000);
+// showSlides();
+
 
 
 // let xhr = new XMLHttpRequest();
@@ -72,16 +76,16 @@ function changeSlideByButton(n) {
 // xhr.send();
 
 
-// function menuOnClick() {
-//   document.getElementById("menu-bar").classList.toggle("change");
-//   document.getElementById("nav").classList.toggle("change");
-//   document.getElementById("menu-bg").classList.toggle("change-bg");
-// }
+function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
 
-// document.getElementById('envia').onclick = function () {
-//   Swal.fire({
-//     icon: "success",
-//     title: "¡Gracias por Contactárnos!",
-//     text: "En breve nos comunicaremos contigo."
-//   });
-// }
+document.getElementById('envia').onclick = function () {
+  Swal.fire({
+    icon: "success",
+    title: "¡Gracias por Contactárnos!",
+    text: "En breve nos comunicaremos contigo."
+  });
+}
